@@ -1,6 +1,7 @@
 import './app.css'
 import LeftMenu from './components/menus/left-menu.jsx'
 import RightMenu from './components/menus/right-menu.jsx'
+import TanksContainer from './components/tanks/tanks-container';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <LeftMenu />      
 
       <RightMenu />
+      <TanksContainer />
       
     </div>
   );
