@@ -1,4 +1,5 @@
-import './style.css'
+import React from 'react'
+import $ from './style.scss'
 import MenuItem from './menu-item.jsx'
 
 const MenuContainer = ({ 

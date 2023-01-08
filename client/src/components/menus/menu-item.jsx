@@ -1,3 +1,5 @@
+import React from 'react'
+
 const MenuItem = ({ label, width, height, marginBottom, marginRight }) => {
   return (
     <div style={{ marginBottom: "1rem" }}>

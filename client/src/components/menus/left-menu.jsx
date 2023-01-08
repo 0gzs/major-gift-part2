@@ -1,8 +1,9 @@
+import React from 'react'
 import MenuContainer from './menu-container.jsx'
 
 const LeftMenu = () => {
   return (
-    <section id="left-menu">
+    <section>
       <MenuContainer 
         left={20}
         top="5%"

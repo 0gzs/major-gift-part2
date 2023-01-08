@@ -1,4 +1,5 @@
-import './styles.css'
+import React from 'react'
+import './styles.scss'
 import Tank from './tank.jsx'
 
 const TanksContainer = () => {

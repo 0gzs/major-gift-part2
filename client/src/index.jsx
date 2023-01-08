@@ -1,7 +1,13 @@
-import './app.css'
+import React from 'react';
+import { createRoot } from 'react-dom/client'
+import $ from './global.scss'
+
 import LeftMenu from './components/menus/left-menu.jsx'
 import RightMenu from './components/menus/right-menu.jsx'
 import TanksContainer from './components/tanks/tanks-container';
+
+const container = document.getElementById('app')
+const root = createRoot(container)
 
 function App() {
   return (
@@ -13,7 +19,7 @@ function App() {
       <TanksContainer />
       
     </div>
-  );
+  )
 }
 
-export default App;
+root.render(<App />)

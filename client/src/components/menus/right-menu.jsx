@@ -1,11 +1,12 @@
-import './style.css'
+import React from 'react'
+
 import MenuContainer from './menu-container.jsx'
 import MenuItem from './menu-item.jsx'
 
 const RightMenu = () => {
 
   return (
-    <section id="right-menu">
+    <section>
       <MenuContainer
         flex="flex"
         top="3%"

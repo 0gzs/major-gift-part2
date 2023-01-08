@@ -16,3 +16,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+  border: 2px solid red;
+  width: 100vw;
+  height: calc((1154 / 2477 * 100vw));
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1vw;
+}
