@@ -1,6 +1,6 @@
+import '../assets/sass/components/Menus.scss'
 import React from 'react'
-import $ from './style.scss'
-import MenuItem from './menu-item.jsx'
+import MenuItem from './MenuItem.jsx'
 
 const MenuContainer = ({ 
   children,

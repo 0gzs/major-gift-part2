@@ -1,6 +1,6 @@
+import '../assets/sass/components/Tanks.scss'
 import React from 'react'
-import './styles.scss'
-import Tank from './tank.jsx'
+import Tank from './Tank.jsx'
 
 const TanksContainer = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MenuItem = ({ label, width, height, marginBottom, marginRight }) => {
+const MenuItem = ({ label, width, height, marginRight }) => {
   return (
     <div style={{ marginBottom: "1rem" }}>
       <div className="menu-item" 
