@@ -1,0 +1,34 @@
+.tank-container {
+  width: 70vw;
+  height: calc((1339 / 2447) * 100vw);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-tank-container {
+  flex: 2.5;
+  position: relative;
+}
+
+.big-tank {
+  background-color: rgba(200, 200, 200, 0.3);
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 2vw;
+}
+
+.small-tank-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  padding: 1vw 0;
+  gap: 1vw;
+}
+
+.tank {
+  background-color: rgba(200, 200, 200, 0.3);
+  flex: 1;
+}
