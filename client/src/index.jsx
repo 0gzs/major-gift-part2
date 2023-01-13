@@ -11,9 +11,10 @@ const root = createRoot(container)
 function App() {
   return (
     <>
-      <Menus>
+      <Menus />
+      <div className="screen">
         <Tanks />
-      </Menus>
+      </div>
     </>
   )
 }

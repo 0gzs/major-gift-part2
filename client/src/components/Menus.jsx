@@ -1,11 +1,23 @@
 import './Menus.scss'
-import React from 'react'
+import React, { useState } from 'react'
+import MenuPopup from './MenuPopup'
 
 const MenuBtn = ({ marginTop }) => {
-  return <div className="menu-btn" style={{ marginTop: marginTop }}></div> 
+  const [showPopup, setShowPopup] = useState(false)
+
+  const handleBtnClick = () => setShowPopup(!showPopup)
+
+  return (
+    <>
+      <div onClick={handleBtnClick} className="menu-btn" style={{ marginTop: marginTop }}></div> 
+      { showPopup ? 
+        <MenuPopup close={handleBtnClick}/> 
+      : null }
+    </>
+  )
 }
 
-const Menus = ({ children }) => {
+const Menus = () => {
   return (
     <>
       <div className="top-menu">
@@ -21,7 +33,6 @@ const Menus = ({ children }) => {
         <MenuBtn />
         <MenuBtn />
       </div>
-      { children }
       <div className="menu right-menu">
         <MenuBtn />
         <MenuBtn marginTop={"3.5vw"} />

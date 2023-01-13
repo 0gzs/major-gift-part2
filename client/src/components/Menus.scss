@@ -35,6 +35,11 @@
   height: 5.8vw;
   background-color: rgba(200, 200, 200, 0.3);
   border-radius: 46%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fefb90;
+  }
 }
 
 .top-menu > .menu-btn {

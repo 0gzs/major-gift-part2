@@ -1,0 +1,25 @@
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  box-shadow: 0 .3vw 2vw rgba(50, 50, 50, 0.3);
+}
+
+.popup {
+  background-color: #fefb90;
+  border-radius: .5vw;
+  text-align: center;
+  gap: .5vw;
+  color: #3e3e3e;
+  padding: 2vw 3vw;
+
+  &__menu-title {
+    font-size: min(2rem, 2vw);
+    font-weight: 700;
+    color: #3e3e3e;
+    margin: 1vw 0;
+  }
+}
+

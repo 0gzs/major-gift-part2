@@ -15,6 +15,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   background-color: #207ca5;
+  font-size: min(1.4rem, 1vw);
+}
+
+button {
+  padding: .75vw 1.75vw;
+  border-radius: .25vw;
+  background-color: #207ca5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-size: min(1.4rem, 1vw);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 #app {
