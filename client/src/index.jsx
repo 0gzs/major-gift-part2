@@ -10,12 +10,10 @@ const root = createRoot(container)
 
 function App() {
   return (
-    <>
+    <div className='screen'>
       <Menus />
-      <div className="screen">
-        <Tanks />
-      </div>
-    </>
+      <Tanks />
+    </div>
   )
 }
 

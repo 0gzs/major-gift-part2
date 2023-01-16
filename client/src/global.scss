@@ -35,8 +35,25 @@ button {
 
 #app {
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen {
+  width: 100%;
   height: calc((1339 / 2447) * 100vw);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transform-origin: center;
+  border: 2px solid white;
 }
+
+
+
+
+
+
+
+
+
