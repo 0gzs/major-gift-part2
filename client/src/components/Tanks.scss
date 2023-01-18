@@ -1,29 +1,20 @@
-.tank-container {
-  width: 70vw;
-  height: calc((1339 / 2447) * 100vw);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid red;
-}
-
 .big-tank-container {
   position: relative;
 }
 
 .big-tank {
-  background-color: rgba(200, 200, 200, 0.3);
-  width: 60vw;
-  height: 32vw;
+  background-color: rgba(200, 200, 200, 0.2);
+  width: 50vw;
+  height: 30.5vw;
   position: absolute;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   top: 2vw;
 }
 
 .small-tank-container {
   width: 60vw;
-  height: 18vw;
+  height: 14.5vw;
   position: absolute;
   bottom: 1vw;
   left: 50%;
@@ -34,9 +25,26 @@
 
 .tank {
   flex: 1;
-  background-color: rgba(200, 200, 200, 0.3);
-  transition: all .7s;
+  background-color: rgba(200, 200, 200, 0.2);
+  transition: all .6s ease-in-out;
+  position: relative;
 }
+
+.zoomTrigger {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  background-color: #444;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+
+  &:hover { cursor: pointer; }
+}
+
+.tank1ZoomedIn { transform: scale(2.5) translate(50%, -50%); }
+.tank2ZoomedIn { transform: scale(2.5) translateY(-50%); }
+.tank3ZoomedIn { transform: scale(2.5) translate(-50%, -50%); }
 
 
 
