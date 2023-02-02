@@ -17,6 +17,9 @@ app.use(webpackHotMiddleware(compiler))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '/../client/dist')))
 
+const router = require('./routes/index.js')
+app.use('/api', router)
+
 app.use((_, res) => {
   res.sendStatus(404)
 })
