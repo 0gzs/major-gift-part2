@@ -49,7 +49,6 @@
   left: 150%;
   top: 50%;
   transform: translateY(-50%);
-  transition: left 15s ease-out;
 
   &:hover { cursor: pointer; }
 }
@@ -57,15 +56,6 @@
 .tank1ZoomedIn { transform: scale(2.5) translate(50%, -50%); }
 .tank2ZoomedIn { transform: scale(2.5) translateY(-50%); }
 .tank3ZoomedIn { transform: scale(2.5) translate(-50%, -50%); }
-
-.moveSharkLeft {
-  left: -90%;
-}
-
-.moveSharkRight {
-  right: -150%;
-  transform: scaleX(-0.5) scaleY(0.5);
-}
 
 .count {
   font-size: 1.5vw;
@@ -129,26 +119,18 @@
   }
 }
 
+.sharkAnimation1 {
+  animation: animation1 infinite 15s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes animation1 {
+  0% {
+    right: -150%;
+  }
+  50% {
+    left: -90%;
+  } 
+  100% {
+    right: -150%;
+  }
+}
